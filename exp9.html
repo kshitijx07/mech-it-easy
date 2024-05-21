@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flywheel</title>
+    <link rel="stylesheet" href="exp9.css">
+    <link rel="stylesheet" href="expcss.css">
+    <script src="scriptexp9.js" defer></script>
+    <style>
+        *{
+            margin: 5px;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+            text-align: center;
+        }
+        th, td {
+            width: 80px;
+        }
+        table{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="text-align: center;">Title: Flywheel
+    </h1>
+
+    <hr>
+
+    <div>
+      <u><strong>  <p>Aim:</p> </strong></u>
+        <p>To find the moment of inertia of the compound pendulum.</p>
+      <u><strong>  <p>Apparatus:</p> </strong></u>
+        <p>A steel rod with holes in it for suspension (bar pendulum), A knife edged fulcrum, stop
+            watch, meter scale</p>
+     <u><strong>   <p>Theory:</p></strong></u>
+        <p>A flywheel; is a heavy metal wheel attached to the shaft of the prime mover (motor or
+            engine). Flywheels have most of their mass concentrated on the circumstances, thereby
+            giving high moment of inertia. We know rotating bodies possess kinetic energy given by the
+            relation
+            K.E = 1
+            /2 Iω<sup>2</sup>
+            . Hence if moment of inertia I is increased, K.E also increases.
+            Flywheels thus store the kinetic energy and release it back to the system when required. They
+            are therefore called as ‘reservoir of energy’.
+            An imported application of a flywheel is in a mechanical press where for a fraction of time
+            high energy is required for actual punching, shearing or forming. This energy is supplied by
+            the flywheel. During the longer non active period, the speed of the flywheel is built up slowly
+            by a low powered motor. Thus the motor is not overloaded and also results in energy saving.
+            In automobiles, the flywheel is provided by the combustion in the cylinders and provides
+            energy for the compression stroke in the pistons.
+             </p>
+
+   <center>       <img src="https://www.shutterstock.com/shutterstock/photos/213465085/display_1500/stock-vector-mechanical-conservation-of-energy-flywheel-213465085.jpg" alt="wait" style="height: 20%; width: 30vw;"> </center>   
+             
+             <center>
+                <img src="WhatsApp Image 2024-05-20 at 1.11.18 PM.jpeg" alt="" style="height: 30%; width: 30vw;">
+             </center>
+
+             <p>
+                <strong><u>Procedure</u></strong
+                >:
+                </p>
+              <div class="procedure">
+                <ul>
+                  <li>
+                    Wind a string around the shaft of the flywheel. Attach a pan of known weight from the
+                    end of the string. Hold the pan i.e. does not allow the flywheel to rotate.
+                  </li>
+                  <li>
+                    Measure the diameter of the axle with a vernier caliper
+                  </li>
+                  <li>
+                    . Add some weight in the pan and note the total mass ‘m’ of the pan. Also note the height ‘h’
+of the base of the pan from the ground.
+
+                  </li>
+                  <li>
+                    Hold a stop watch and now release the pan. The pan accelerates and gains velocity as it
+                    travels down. Note the time and rotations ‘N1’ turned by the flywheel till the pan touches the
+                    ground.                    
+                  </li>
+                  <li>
+                    When the pan hits the ground it gets detached from the flywheel. The flywheel continues
+to rotate. Note the rotations ‘N2’ turned by the flywheel from the moment the pan touches the
+ground till the flywheel stops.
+
+                  </li>
+                  <li> Repeat the above steps by changing the height of the pan from the ground and the moment
+                    weight in the pan for one more set of observations.</li>
+                </ul>
+
+              <u><strong>  <p>Obsevation Table</p> </strong></u>
+    <table>
+        <thead>
+            <th>Sr No.</th>
+            <th>N</th>
+            <th>n</th>
+            <th>H</th>
+            <th>t</th>
+            <th>w</th>
+            <th>I</th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>12</td>
+                <td>6</td>
+                <td>1.23</td>
+                <td>23.24</td>
+                <td>3.24</td>
+                <td>0.35</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>9</td>
+                <td>5</td>
+                <td>1.17</td>
+                <td>18.74</td>
+                <td>3.35</td>
+                <td>0.3</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>6</td>
+                <td>4</td>
+                <td>1.1</td>
+                <td>13.41</td>
+                <td>3.79</td>
+                <td>0.23</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+
+       <u><strong> <p>Results:</p> </strong></u>
+        <p>Moment of inertia of the compound pendulum (experimental) = 0.3 <br>
+            Moment of inertia of the compound pendulum (analytical) = 0.35</p>
+        
+    </div>
+    
+   <div class="container">
+    <u><strong><h1>Observation Table calculator</h1></strong></u> 
+    <label for="mass">Mass of Pan (M) in kg:</label>
+    <input type="number" id="mass" step="0.001">
+    <br><br>
+    <table>
+        <thead>
+            <tr>
+                <th>So. No.</th>
+                <th>N</th>
+                <th>n</th>
+                <th>t</th>
+                <th>H</th>
+                <th>w</th>
+                <th>I</th>
+            </tr>
+        </thead>
+        <tbody id="observationTable">
+            <tr>
+                <td>1</td>
+                <td><input type="number" class="N" ></td>
+                <td><input type="number" class="n" ></td>
+                <td><input type="number" class="t"  step="0.01"></td>
+                <td><input type="number" class="H"  step="0.01"></td>
+                <td class="w"></td>
+                <td class="I"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><input type="number" class="N" ></td>
+                <td><input type="number" class="n" ></td>
+                <td><input type="number" class="t"  step="0.01"></td>
+                <td><input type="number" class="H"  step="0.01"></td>
+                <td class="w"></td>
+                <td class="I"></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><input type="number" class="N" ></td>
+                <td><input type="number" class="n" ></td>
+                <td><input type="number" class="t"  step="0.01"></td>
+                <td><input type="number" class="H"  step="0.01"></td>
+                <td class="w"></td>
+                <td class="I"></td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <button onclick="calculate()">Calculate</button>
+   </div>
+</body>
+</html>

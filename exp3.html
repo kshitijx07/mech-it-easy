@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coefficient Of Block Friction</title>
+    <link rel="stylesheet" href="expcss.css">
+    <link rel="stylesheet" href="exp3.css" >
+    <style>
+      table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+      }
+      th, td {
+          padding: 10px;
+      }
+  </style>
+  </head>
+  <body>
+    <main>
+      <center><h1>Title : Coefficient Of Block Friction</h1></center>
+      <hr />
+      <p>
+        <strong><u>Aim</u></strong
+        >: To determine the co-efficient of friction between wood and glass.
+      </p>
+      <p>
+        <strong><u>Apparatus</u></strong
+        >: Glass pane, wooden block, pulleys and weights.
+      </p>
+      <p>
+        <strong><u>Theory</u></strong
+        >: When one body moves, or tends to move tangentially over the surface of the other, it
+        experiences a force which opposes the motion. This force acting opposite to the direction of
+        motion is called friction.
+
+        <ul>
+            <li>Angle of friction: The normal reaction and the frictional force can be combined into one
+                single resultant force. The angle which this resultant makes with the normal reaction is
+                called angle of friction. It in denoted by Φ. <br>
+                tan &phi; = &mu;: <br>
+                Where μ is co-efficient of friction.</li>
+            <li>Co-efficient of friction (μ) : It is the ratio of limiting frictional force to the normal
+                reaction. <br>
+                μ = F / N <br>
+                
+                where F is the frictional force <br>
+                N is the normal reaction</li>
+        </ul>
+      </p>
+      <br />
+
+      <center>
+        <img style="width: 300x; height: 300px;"
+          src="WhatsApp Image 2024-04-11 at 11.53.56 PM.jpeg"
+          alt=""
+        />
+      </center>
+      <br />
+     
+      <center>
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <mrow>
+                <mi>&mu;</mi>
+                <mo>=</mo>
+                <mfrac>
+                    <mi>P - W sin &theta;</mi>
+                    <mi>W cos &theta;</mi>
+                </mfrac>
+        </math>
+      </center>
+
+      <p>
+        <strong><u>Procedure</u></strong
+        >:
+      </p>
+      <div class="procedure">
+        <ul>
+          <li>
+            Set the plane horizontally either with the help of a spirit level or by making the
+inclination of the plane 0º.
+          </li>
+          <li>
+            Take a string with a pan attached to it and pass the string over the pulley fixed to the
+plane in such a way that the string is parallel to the plane.
+          </li>
+          <li>
+            Attached to the other end of the string, is a wooden block kept on the plane.
+          </li>
+          <li>
+            Place the weights in the pan and record the weights in the pan. Record the weight at
+which the wooden block is about to move.
+          </li>
+          <li>
+            Repeat the procedure by placing different weights on the wooden block for two more
+readings.
+          </li>
+        </ul>
+
+        <p>
+          <strong><u>Observation Table </u></strong>:
+        </p>
+        <table border="3px solid #fff" width="100%">
+          <thead>
+            <th>Sr. No.</th>
+            <th>Surface 1</th>
+            <th>Surface 2</th>
+            <th>W (weigth of pan)</th>
+            <th>P (weigth of efforts)</th>
+            <th>&theta; (Angle between surfaces)</th>
+            <th>N (Normal Force)</th>
+            <th>&mu;<sub>max</sub></th>           
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Glass</td>
+              <td>Sunmica</td>
+              <td>235</td>
+              <td>228</td>
+              <td>23</td>
+              <td>216.31</td>
+              <td>0.62</td>
+            </tr>
+            </tr>
+            <tr>
+                <td>2</td>
+              <td>Glass</td>
+              <td>Sunmica</td>
+              <td>335</td>
+              <td>368</td>
+              <td>30</td>
+              <td>290.11</td>
+              <td>0.69</td>
+            </tr>
+            <tr>
+                <td>3</td>
+              <td>Glass</td>
+              <td>Sandpaper</td>
+              <td>235</td>
+              <td>248</td>
+              <td>23</td>
+              <td>216.31</td>
+              <td>0.72</td>
+            </tr>
+            <tr>
+                <td>4</td>
+              <td>Glass</td>
+              <td>Sandpaper</td>
+              <td>335</td>
+              <td>378</td>
+              <td>30</td>
+              <td>290.11</td>
+              <td>0.72</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        <strong><u>Result</u></strong
+        >: Coefficient of static friction for different surface is calculated.
+      </p>
+
+      <br />
+      
+
+      <div class="container"><div class="caculator">
+        <h1>Calculator</h1>
+        <form action="">
+          <label for="dropdown1">Select an option:</label>
+          <select id="dropdown1" name="dropdown1" onchange="updateDropdown2() ">
+            <option value="sunmica">Sunmica</option>
+            <option value="glass">Glass</option>
+            <option value="sandpaper">Sandpaper</option>
+          </select>
+        
+          <br><br>
+        
+          <label for="dropdown2">Select a sub-option:</label>
+          <select id="dropdown2" name="dropdown2">
+            <option value="sunmica">Sunmica</option>
+            <option value="glass">Glass</option>
+            <option value="sandpaper">Sandpaper</option>
+          </select>
+        </form>
+        
+      
+      
+	<form id="calculator">
+		<label for="w">Weight of Pan (W):</label>
+		<input type="number" id="w" name="w" required placeholder="0"><br><br>
+		<label for="p">Weight of Efforts (P):</label>
+		<input type="number" id="p" name="p" required placeholder="0"><br><br>
+		<label for="theta">Angle between surfaces (θ):</label>
+		<input type="number" id="theta" name="theta" step="0.01" required placeholder="0"><br><br>
+		<button type="submit">Calculate</button>
+	</form>
+	<div id="result"></div>
+	<script src="scriptexp3.js"></script></div>
+
+      </div>
+
+    </main>
+  </body>
+</html>

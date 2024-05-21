@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centroid Calculation</title>
+    <link rel="stylesheet" href="expcss.css">
+    <link rel="stylesheet" href="exp6.css">
+
+    <style>
+        *{
+            margin: 5px;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        .wide-column {
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+
+    <center><h1>Title : Centroid 2-D</h1></center><hr>
+   <p><strong><u>Aim</u></strong>: To verify the coordinates of the centroid of given lamina determined from the experiment with theoretical
+    result.</p>
+   <p><strong><u>Apparatus</u></strong>: Vertical stand, lamina(Triangular, L section, Parabolic) and Measuring tape</p>
+   <p>
+    <strong><u>Theory</u></strong>:
+    The centroid is the centre point of the object. The point in which the three medians of the triangle intersect is known as the centroid of a triangle. It is also defined as the point of intersection of all the three medians. The median is a line that joins the midpoint of a side and the opposite vertex of the triangle. The centroid of the triangle separates the median in the ratio of 2: 1. It can be found by taking the average of x- coordinate points and y-coordinate points of all the vertices of the triangle.
+  </p>
+  <br />
+
+  <center>
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ5afL6oTZv2S10A9Rm7Gf2wZvtuyyXGWYAg&s"
+      alt=""/>
+
+  </center>
+  <br />
+  <center>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <mrow style="font-size: 30px;">
+            <mi>x</mi>
+            <mo>=</mo>
+            <mfrac>
+                <mi>&sum;Aixi</mi>
+                <mi>&sum;Ai</mi>
+            </mfrac>
+    </math> <br> <br>
+
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <mrow style="font-size: 30px;">
+            <mi>y</mi>
+            <mo>=</mo>
+            <mfrac>
+                <mi>&sum;Aiyi</mi>
+                <mi>&sum;Ai</mi>
+            </mfrac>
+    </math>
+  </center>
+  
+    <p>
+      <strong><u>Observation Table </u></strong>:
+    </p>
+    <table border="3px solid #fff" width="100%">
+      <thead>
+        <th>Sr. No.</th>
+        <th>Shape</th>
+        <th>A<sub>i</sub></th>
+        <th>x<sub>i</sub></th>
+        <th>y<sub>i</sub></th>
+        <th>A<sub>i</sub>x</sub><sub>i</sub></th>
+        <th>A<sub>i</sub>y<sub>i</sub></th>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Rectangle</td>
+          <td>48</td>
+          <td>4</td>
+          <td>3</td>
+          <td>192</td>
+          <td>144</td>
+        </tr>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Triangle</td>
+            <td>12</td>
+            <td>9.33</td>
+            <td>2</td>
+            <td>111.96</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Quarter Circle</td>
+            <td>-3.14</td>
+            <td>0.84</td>
+            <td>0.84</td>
+            <td>-2.66</td>
+            <td>-2.66</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>
+    <strong><u>Result</u></strong
+    >: Law of moment is verified.
+  </p>
+    <h2>Centroid Calculation</h2>
+    <div class="container">
+        <table id="centroidTable">
+            <thead>
+               
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Shape</th>
+                    <th>Area (A)</th>
+                    <th>x</th>
+                    <th>y</th>
+                    <th class="wide-column">Ax</th>
+                    <th class="wide-column">Ay</th>
+                </tr>
+                <tr>
+                    <td>
+                        <select class="shape">
+                            <option value="circle">Circle</option>
+                            <option value="rectangle">Rectangle</option>
+                            <option value="square">Square</option>
+                            <option value="triangle">Triangle</option>
+                            <option value="parabolic lamina">Parabolic Lamina</option>
+                            <option value="L-section lamina">L-section Lamina</option>
+                        </select>
+                    </td>
+                    <td><input type="number" step="any" class="area"></td>
+                    <td><input type="number" step="any" class="x"></td>
+                    <td><input type="number" step="any" class="y"></td>
+                    <td class="ax"></td>
+                    <td class="ay"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <select class="shape">
+                            <option value="circle">Circle</option>
+                            <option value="rectangle">Rectangle</option>
+                            <option value="square">Square</option>
+                            <option value="triangle">Triangle</option>
+                            <option value="parabolic lamina">Parabolic Lamina</option>
+                            <option value="L-section lamina">L-section Lamina</option>
+                        </select>
+                    </td>
+                    <td><input type="number" step="any" class="area"></td>
+                    <td><input type="number" step="any" class="x"></td>
+                    <td><input type="number" step="any" class="y"></td>
+                    <td class="ax"></td>
+                    <td class="ay"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <select class="shape">
+                            <option value="circle">Circle</option>
+                            <option value="rectangle">Rectangle</option>
+                            <option value="square">Square</option>
+                            <option value="triangle">Triangle</option>
+                            <option value="parabolic lamina">Parabolic Lamina</option>
+                            <option value="L-section lamina">L-section Lamina</option>
+                        </select>
+                    </td>
+                    <td><input type="number" step="any" class="area"></td>
+                    <td><input type="number" step="any" class="x"></td>
+                    <td><input type="number" step="any" class="y"></td>
+                    <td class="ax"></td>
+                    <td class="ay"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <select class="shape">
+                            <option value="circle">Circle</option>
+                            <option value="rectangle">Rectangle</option>
+                            <option value="square">Square</option>
+                            <option value="triangle">Triangle</option>
+                            <option value="parabolic lamina">Parabolic Lamina</option>
+                            <option value="L-section lamina">L-section Lamina</option>
+                        </select>
+                    </td>
+                    <td><input type="number" step="any" class="area"></td>
+                    <td><input type="number" step="any" class="x"></td>
+                    <td><input type="number" step="any" class="y"></td>
+                    <td class="ax"></td>
+                    <td class="ay"></td>
+                </tr>
+                <td>Sum</td>
+                <td id="sumArea"></td>
+                <td></td>
+                <td></td>
+                <td id="sumAx"></td>
+                <td id="sumAy"></td>
+            </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+    
+            </tfoot>
+        </table>
+        <br>
+        <button id="calculateBtn">Calculate</button>
+        <p id="result"></p>
+    </div>
+
+
+    <script src="scriptexp6.js"></script>
+</body>
+</html>

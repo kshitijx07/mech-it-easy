@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coefficient of restitution</title>
+    <link rel="stylesheet" href="expcss.css">
+    <link rel="stylesheet" href="exp10.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+        .result {
+            margin-top: 20px;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">COEFFICIENT OF RESTITUTION
+    </h1>
+    <div class="main">
+       <strong> <u> <p>Aim:</p> </u> </strong>
+        <p>Measure the initial velocity of a steel ball using a Vernier Projectile
+            Launcher.
+            Apply the ideas from two-dimensional kinematics to predict
+            the impact of a ball in projectile motion.
+            </p>
+            <strong> <u> <p>Apparatus:</p> </u> </strong>
+        <p>Vernier Projectile Launcher
+             Small cardboard box,
+             Steel ball,
+             Meter stick,
+             Waxed paper</p>
+             <strong> <u>   <p>Theory:</p> </u> </strong>
+        <p>The final momentum of the particle may be obtained by
+            vectorially adding its initial momentum and the
+            impulse during the time of impact.A collision between two bodies which occurs in a very small interval of time and during
+            which the two bodies exert relatively large forces on each other, is called an impact. The
+            common normal to the surfaces in contact during the impact is known as the line of impact. If the
+            velocities of impact and if their mass centres too are located on this line, the impact is said to be
+            a direct central impact.
+            If a ball of mass m collides with a concrete floor with a velocity V, the ball rebounds back with
+            a velocity V . If the ball is dropped on to be floor, V and V lie on a vertical line. Mass centre of
+            the ball lies on this line. The centre of the infinite massed floor also can be assumed to be lying
+             on the same line. Hence the impact is a direct central one, nothing that floor has zero velocity.
+            The collision period consists of two district phases.The restitution phase that follows at the end
+            of which the ball and the floor will have
+            regained their original shape and the ball
+            rebounds back with a velocity V´. Force P and
+            R exerted by the floor on the ball are the only
+            impulsive forces during the impact. <br>Numerically, e lies between zero and one.
+             </p> 
+             <center><img src="data:image/jpeg;base64,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" alt=""></center>           
+        
+        <table width="100%"; border="2px;">
+            <strong> <u> <p>Obervation Table for Elastic collision</p> </u> </strong>
+            <tr>
+                <td>Sr.no</td>
+                <td>m1</td> 
+                <td>m2</td>
+                <td>u1</td>
+                <td>u2</td>
+                <td>v1</td>
+                <td>v2</td>
+                <td>ΔK.E</td>
+                <td>e</td>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td>0.5</td>
+                <td>1.5</td>
+                <td>0.71</td>
+                <td>-0.5</td>
+                <td>-1.11</td>
+                <td>0.1</td>
+                <td>0</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>0.8</td>
+                <td>1.9</td>
+                <td>0.77</td>
+                <td>-0.9</td>
+                <td>-1.58</td>
+                <td>0.09</td>
+                <td>0</td> 
+                <td>1</td> 
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>1</td>
+                <td>2</td>
+                <td>1</td>
+                <td>-1</td>
+                <td>-1.67</td>
+                <td>0.33</td>
+                <td>0</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>1.3</td>
+                <td>2.2</td>
+                <td>1.4</td>
+                <td>-1.1</td>
+                <td>-1.74</td>
+                <td>0.76</td>
+                <td>0</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>5.</td>
+                <td>1.5</td>
+                <td>2.2</td>
+                <td>1.4</td>
+                <td>-1.1</td>
+                <td>-1.74</td>
+                <td>0.76</td>
+                <td>0</td>
+                <td>1</td>
+            </tr>
+        </table>
+        <table  width= "100%"; border="2px;">
+            <strong> <u>  <p>Obervation Table for Inelastic collision</p> </u> </strong>
+            <tr>
+                <td>Sr.no</td>
+                <td>m1</td> 
+                <td>m2</td>
+                <td>u1</td>
+                <td>u2</td>
+                <td>v1</td>
+                <td>v2</td>
+                <td>ΔK.E</td>
+                <td>e</td>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td>1.1</td>
+                <td>1.5</td>
+                <td>1</td>
+                <td>-0.55</td>
+                <td>0.11</td>
+                <td>0.11</td>
+                <td>0.6</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>1.2</td>
+                <td>1.7</td>
+                <td>1.1</td>
+                <td>-0.8</td>
+                <td>-0.01</td>
+                <td>-0.01</td>
+                <td>1.26</td> 
+                <td>0</td> 
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>1.5</td>
+                <td>2</td>
+                <td>1.5</td>
+                <td>-0.9</td>
+                <td>0.13</td>
+                <td>0.13</td>
+                <td>2.46</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>1.7</td>
+                <td>2.2</td>
+                <td>1.6</td>
+                <td>-1.1</td>
+                <td>0.08</td>
+                <td>0.08</td>
+                <td>3.49</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>5.</td>
+                <td>2.0</td>
+                <td>2.5</td>
+                <td>2</td>
+                <td>-2.2</td>
+                <td>-0.33</td>
+                <td>-0.33</td>
+                <td>9.8</td>
+                <td>0</td>
+            </tr>
+        </table>
+        <strong> <u> <p>Conclusion:</p> </u> </strong>
+        <p>Coefficient of restitution and total change in kinetic energy is calculated.</p>
+    </div>
+
+<div class="container">
+    <h2>Observation Table</h2>
+    <table id="observationTable">
+        <thead>
+            <tr>
+                <th>Sl. No</th>
+                <th>m1 (kg)</th>
+                <th>m2 (kg)</th>
+                <th>u1 (m/s)</th>
+                <th>u2 (m/s)</th>
+                <th>v1 (m/s)</th>
+                <th>v2 (m/s)</th>
+                <th>K.E</th>
+                <th>e</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td><input type="number" class="m1" step="any"></td>
+                <td><input type="number" class="m2" step="any"></td>
+                <td><input type="number" class="u1" step="any"></td>
+                <td><input type="number" class="u2" step="any"></td>
+                <td><input type="number" class="v1" step="any"></td>
+                <td><input type="number" class="v2" step="any"></td>
+                <td class="ke"></td>
+                <td class="e"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><input type="number" class="m1" step="any"></td>
+                <td><input type="number" class="m2" step="any"></td>
+                <td><input type="number" class="u1" step="any"></td>
+                <td><input type="number" class="u2" step="any"></td>
+                <td><input type="number" class="v1" step="any"></td>
+                <td><input type="number" class="v2" step="any"></td>
+                <td class="ke"></td>
+                <td class="e"></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><input type="number" class="m1" step="any"></td>
+                <td><input type="number" class="m2" step="any"></td>
+                <td><input type="number" class="u1" step="any"></td>
+                <td><input type="number" class="u2" step="any"></td>
+                <td><input type="number" class="v1" step="any"></td>
+                <td><input type="number" class="v2" step="any"></td>
+                <td class="ke"></td>
+                <td class="e"></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><input type="number" class="m1" step="any"></td>
+                <td><input type="number" class="m2" step="any"></td>
+                <td><input type="number" class="u1" step="any"></td>
+                <td><input type="number" class="u2" step="any"></td>
+                <td><input type="number" class="v1" step="any"></td>
+                <td><input type="number" class="v2" step="any"></td>
+                <td class="ke"></td>
+                <td class="e"></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td><input type="number" class="m1" step="any"></td>
+                <td><input type="number" class="m2" step="any"></td>
+                <td><input type="number" class="u1" step="any"></td>
+                <td><input type="number" class="u2" step="any"></td>
+                <td><input type="number" class="v1" step="any"></td>
+                <td><input type="number" class="v2" step="any"></td>
+                <td class="ke"></td>
+                <td class="e"></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td><input type="number" class="m1" step="any"></td>
+                <td><input type="number" class="m2" step="any"></td>
+                <td><input type="number" class="u1" step="any"></td>
+                <td><input type="number" class="u2" step="any"></td>
+                <td><input type="number" class="v1" step="any"></td>
+                <td><input type="number" class="v2" step="any"></td>
+                <td class="ke"></td>
+                <td class="e"></td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="button-container">
+        <button type="button" id="calculateBtn">Calculate</button>
+    </div>
+
+    <div class="result">
+        <p id="finalResult"></p>
+    </div>
+</div>
+
+    <script src="scriptexp10.js"></script>
+</body>
+</html>

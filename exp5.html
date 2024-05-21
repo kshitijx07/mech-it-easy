@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centroid 1-D</title>
+    <link rel="stylesheet" href="expcss.css">
+    <link rel="stylesheet" href="exp5.css">
+    <style>
+        img{
+            width: 500px;
+            height: 300px;
+        }
+        @media(max-width:600px){
+            img{
+                width: 100%;
+                padding: 0;
+                margin: 0;
+            }
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+        }
+        .lx, .ly {
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+   <center><h1>Title : Centroid 1-D</h1></center><hr>
+   <p><strong><u>Aim</u></strong>: To verify the Parallelogram Law of Forces</p>
+   <p><strong><u>Apparatus</u></strong>: Metal Wire, string, scale, blank paper, protractors, etc.</p>
+   <p><strong><u>Theory</u></strong>: Centoid of 1-D  object is known as the point at which entire mass of the object is concentrated.</p> <br>
+   <center>  <span><img src="https://slidetodoc.com/presentation_image_h/2e66dec00a10a4ab6c64743d6658ae8c/image-10.jpg" alt="not found" > </center> <br> </span>
+
+   <center>
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <mrow style="font-size: 30px;">
+            <mi>x</mi>
+            <mo>=</mo>
+            <mfrac>
+                <mi>&sum;L<sub>i</sub>x<sub>i</sub></mi>
+                <mi>&sum;L <sub>i</sub></mi>
+            </mfrac>
+    </math> <br> <br>
+
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+        <mrow style="font-size: 30px;">
+            <mi>y</mi>
+            <mo>=</mo>
+            <mfrac>
+                <mi>&sum;L<sub>i</sub>y<sub>i</sub></mi>
+                <mi>&sum;L <sub>i</sub></mi>
+            </mfrac>
+    </math>
+  </center>
+
+  <center> <p>Where, (x,y) is the coordinates of the centroid of the 1-D object</p> </center>
+
+ <p><strong><u>Procedure</u></strong>:</p>
+    <div class="procedure">
+        <ul>
+            <li>Take a metal strip wire and turn it into given shape.</li>
+            <li>Make a trace the wire shape on blank paper</li>
+            <li>Plot the surface reference axes for the traced figure.</li>
+            <li>Calculate centroid analytically for given traced object.</li>
+            <li>Repeate the above procedure by hanging the object at any other point and then trace the gravity line on the paper</li>
+            <li>Intersections on the both traced line given as the centroid on object experimentally.</li>
+            <li>Find coordinates of the experimental centroid using the scale from the reference axis.</li>
+            <li>Calculate errors in analytical and experimental centroid coordinates.</li>
+        </ul>
+
+ <p><strong><u>Observation Table </u></strong>:</p>
+
+        <table border="3px solid #fff" width="100%" >
+            <thead>
+                <th>segment</th>
+                <th>length</th>
+                <th>x</th>
+                <th>y</th>
+                <th>lx</th>
+                <th>ly</th>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>AB</td>
+                    <td>5</td>
+                    <td>3.76</td>
+                    <td>3.76</td>
+                    <td>18.8</td>
+                    <td>18.8</td>
+                </tr>
+                <tr>
+                    <td>BC</td>
+                    <td>6.28</td>
+                    <td>7.53</td>
+                    <td>6.80</td>
+                    <td>47.28</td>
+                    <td>42.7</td>
+                </tr>
+                <tr>
+                    <td>CD</td>
+                    <td>2</td>
+                    <td>8.53</td>
+                    <td>2.7</td>
+                    <td>17.06</td>
+                    <td>5.4</td>
+                </tr>
+                <tr>
+                    <td>DE</td>
+                    <td>6.28</td>
+                    <td>10.53</td>
+                    <td>4.26</td>
+                    <td>66.12</td>
+                    <td>26.75</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br>
+      <center>  <img src="WhatsApp Image 2024-05-20 at 3.35.21 AM.jpeg" alt="wait"> </center>
+
+    </div>
+    
+    <p><strong><u>Result</u></strong>: Centroid of 1-D object is G(7.63,4.78)</p>
+
+    <br>
+    <div class="container">
+        <H3>CENTROID CALCULATOR</H3>
+        <table id="centroidTable">
+            <tr>
+                <th>length</th>
+                <th>x</th>
+                <th>y</th>
+                <th>lx</th>
+                <th>ly</th>
+            </tr>
+            <tr>
+                <td><input type="number" step="any" class="length"></td>
+                <td><input type="number" step="any" class="x"></td>
+                <td><input type="number" step="any" class="y"></td>
+                <td class="lx"></td>
+                <td class="ly"></td>
+            </tr>
+            <tr>
+                <td><input type="number" step="any" class="length"></td>
+                <td><input type="number" step="any" class="x"></td>
+                <td><input type="number" step="any" class="y"></td>
+                <td class="lx"></td>
+                <td class="ly"></td>
+            </tr>
+            <tr>
+                <td><input type="number" step="any" class="length"></td>
+                <td><input type="number" step="any" class="x"></td>
+                <td><input type="number" step="any" class="y"></td>
+                <td class="lx"></td>
+                <td class="ly"></td>
+            </tr>
+            <tr>
+                <td><input type="number" step="any" class="length"></td>
+                <td><input type="number" step="any" class="x"></td>
+                <td><input type="number" step="any" class="y"></td>
+                <td class="lx"></td>
+                <td class="ly"></td>
+            </tr>
+            <tr>
+                <td colspan="3">Sum</td>
+                <td id="sumLx"></td>
+                <td id="sumLy"></td>
+            </tr>
+        </table>
+        <br>
+        <button onclick="calculate()">Calculate</button>
+        <p id="result"></p>
+    </div>
+	
+
+    <script src="scriptexp5.js"></script>
+
+    
+</main>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallelogram Law</title>
+    <link rel="stylesheet" href="expcss.css">
+    <link rel="stylesheet" href="exp1.css">
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+   <center><h1>Title : Parallelogram Law</h1></center><hr>
+   <p><strong><u>Aim</u></strong>: To verify the Parallelogram Law of Forces</p>
+   <p><strong><u>Apparatus</u></strong>: Drawing sheet, pins, mirrors, weight pan, weights and pulleys.</p>
+   <p><strong><u>Theory</u></strong>: The parallelogram law of forces enables us to determine the single force called resultant
+    which can replace the two forces acting at a point with the same effect as that of the two forces.
+    This law was formulated based on experimental results. This law states that if two forces acting
+    simultaneously on a body at a point are represented in magnitude and direction by the two
+    adjacent sides of a parallelogram, their resultant is represented in magnitude and direction by the
+    diagonal of the parallelogram which passes through the point of intersection of the two sides
+    representing the forces.</p> <br>
+   <center> <img src="https://www.pw.live/exams/wp-content/uploads/2023/11/All-Shapes-Name-in-English-and-Hindi-2023-11-07T163811.720.jpg" alt="not found" style="width: 30%;height: 25vh;"> </center> <br>
+  <center> <p>Where R is the resultant force <br>Ɵ is the angle between A and B.</p> </center>
+  <center> <p>tan &alpha; = B sin&theta;/(A + B cos&theta;)</p> </center>
+ <center> <p>Where &alpha; is the angle between A and R</p> </center>
+
+ <p><strong><u>Procedure</u></strong>:</p>
+    <div class="procedure">
+        <ul>
+            <li>Two pulleys are mounted on a board, which is fixed on a wall. A string is passed through
+                both the pulleys. Another string is tied to this string at the center of the pulleys. Weight
+                pans are attached to the two ends of the string.</li>
+            <li>Fix a drawing sheet on the board. Add weights in any two pans in such a way that the
+                sum of the weights in any two pans is greater than the third. The system of forces will
+                come to equilibrium on some part of the drawing sheet.</li>
+            <li>Take a mirror and place it behind the strings. Mark the images of the strings on the
+                drawing sheet. Remove the drawing sheet and find the resultant of the two forces
+                graphically and analytically</li>
+            <li>Change the weights and repeat the procedure for each set of weights.</li>
+        </ul>
+
+ <p><strong><u>Observation Table </u></strong>:</p>
+        <table border="3px solid #fff" width="100%" >
+            <thead>
+                <th>Sr. No.</th>
+                <th>P (gm)</th>
+                <th>Q (gm)</th>
+                <th>&theta; (degree)</th>
+                <th>R<sub>analytical</sub></th>
+                <th>R <sub>graphical</sub></th>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>200</td>
+                    <td>250</td>
+                    <td>110</td>
+                    <td>261</td>
+                    <td>256</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>300</td>
+                    <td>250</td>
+                    <td>132</td>
+                    <td>228</td>
+                    <td>228</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>200</td>
+                    <td>200</td>
+                    <td>120</td>
+                    <td>200</td>
+                    <td>200</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>150</td>
+                    <td>100</td>
+                    <td>60</td>
+                    <td>217.8</td>
+                    <td>220</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+    
+    <p><strong><u>Result</u></strong>: The resultant for 2 forces is calculated</p>
+
+    <br>
+    
+    <p><strong><u>Calculator</u></strong>:</p>
+
+    <div class="container">
+        <h1>Resultant Force Calculator</h1>
+        <form id="force-form">
+          <label for="force1">Force 1:</label>
+          <input type="number" id="force1" name="force1" required placeholder="0"><br>
+          <label for="force2">Force 2:</label>
+          <input type="number" id="force2" name="force2" required placeholder="0"><br>
+          <label for="angle">Angle between forces:</label>
+          <input type="number" id="angle" name="angle" required placeholder="0"><br>
+          <button type="submit">Calculate Resultant</button>
+        </form>
+        <div id="result" class="result"></div>
+      </div>
+      <script src="scriptexp1.js"></script>
+
+    <p><strong><u>Diagrame</u></strong>:</p>
+</main>
+</body>
+</html>

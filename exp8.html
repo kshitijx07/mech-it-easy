@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moment of Inertia Calculator</title>
+    <link rel="stylesheet" href="expcss.css">
+    <link rel="stylesheet" href="exp8.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 5px;
+        }
+        input {
+            margin: 10px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+        .result {
+            margin-top: 20px;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Compound pendulum</h1>
+    <div>
+       <strong> <u><p>Aim:</p> </u> </strong>
+        <p>To find the moment of inertia of the compound pendulum.</p>
+        <strong> <u> <p>Apparatus:</p>  </u> </strong>
+        <p>A steel rod with holes in it for suspension (bar pendulum), A knife edged fulcrum, stop
+            watch, meter scale</p>
+            <strong> <u>   <p>Theory:</p>  </u> </strong>
+        <p>Compound pendulum is defined as a right body suspended in a vertical plane, from a point on
+            the body other than centre of gravity. On giving small angular displacements, it oscillates and
+            perform harmonic motion.A compound pendulum has an extended mass, like a swinging bar, and is free to oscillate about a horizontal axis. A special reversible compound pendulum called Kater's pendulum is designed to measure the value of g, the acceleration of gravity.
+             </p>          
+        <center><img src="data:image/jpeg;base64,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" alt=""></center>  
+        <strong> <u>  <p>Procedure:</p> </u> </strong>
+        <ol>
+            <li>Suspend the pendulum in the first hole by choosing the length 5 cm on the length slider.</li>
+            <li>Click on the lower end of the pendulum, drag it to one side through a small angle and release it. The pendulum will begin to oscillate from side to side.</li>
+            <li>Repeat the process by suspending the pendulum from the remaining holes by choosing the corresponding lengths on the length slider.</li>
+            <li>Draw a graph by plotting distance d along the X-axis and time period T along the Y-axis.</li>
+            <li>Calculate the average value of  l/T2 for the various choices of T, and then calculate g as in step 2 above.</li>
+            <li>Determine kG and IG as outlined in steps 3 and 4 above.</li>
+            <li>Repeat the experiment in different gravitational environments by selecting an environment from the drop-down environment menu. If the pendulum has been oscillating, press the Stop button to activate the environment menu.</li>
+        </ol>
+        <strong> <u>  <p>Observation Table:</p> </u> </strong>
+        <table border="2px;">
+            <tr>
+                <th>Sr.no</th>
+                <th>b</th>
+                <th>T</th>
+                <th>t=T/10</th>
+                <th>I=(t<sub>2</sub>mgb)/4&pi;</th>
+                <th>Ig=I-mb<sub>2</sub></th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>0.3</td>
+                <td>14.81</td>
+                <td>1.48</td>
+                <td>0.22</td>
+                <td>0.10</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>0.35</td>
+                <td>14.3</td>
+                <td>1.43</td>
+                <td>0.25</td>
+                <td>0.08</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>0.25</td>
+                <td>14.9</td>
+                <td>1.49</td>
+                <td>0.18</td>
+                <td>0.09</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>0.2</td>
+                <td>15.3</td>
+                <td>1.53</td>
+                <td>0.15</td>
+                <td>0.10</td>
+            </tr>
+        </table>
+        <strong> <u> <p>Results:</p> </u></strong>
+        <p>Moment of inertia of the compound pendulum (experimental) =0.09 <br>
+            Moment of inertia of the compound pendulum (analytical) =0.11</p>
+        
+    </div>
+    
+    <div class="container">
+        <form id="calculatorForm">
+            <h2>Moment of Inertia Calculator</h2>
+            <label for="mass">Mass of Uniform Bar (m) in kg:</label>
+            <input type="number" id="mass" name="mass" step="any" required>
+            <br>
+            <label for="length">Length of Rod (L) in meters:</label>
+            <input type="number" id="length" name="length" step="any" required>
+            <br>
+            <label for="rotations">Number of Rotations (n):</label>
+            <input type="number" id="rotations" name="rotations" step="any" required>
+        </form>
+        <div class="result">
+            <p id="analyticalInertia"></p>
+        </div>
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th>Sl. No</th>
+                    <th>b (m)</th>
+                    <th>T (10 osc)</th>
+                    <th>t = T/n</th>
+                    <th>Io</th>
+                    <th>Ig</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><input type="number" class="b" step="any"></td>
+                    <td><input type="number" class="T" step="any"></td>
+                    <td class="t"></td>
+                    <td class="Io"></td>
+                    <td class="Ig"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><input type="number" class="b" step="any"></td>
+                    <td><input type="number" class="T" step="any"></td>
+                    <td class="t"></td>
+                    <td class="Io"></td>
+                    <td class="Ig"></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><input type="number" class="b" step="any"></td>
+                    <td><input type="number" class="T" step="any"></td>
+                    <td class="t"></td>
+                    <td class="Io"></td>
+                    <td class="Ig"></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><input type="number" class="b" step="any"></td>
+                    <td><input type="number" class="T" step="any"></td>
+                    <td class="t"></td>
+                    <td class="Io"></td>
+                    <td class="Ig"></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5">Average Ig</td>
+                    <td id="averageIg"></td>
+                </tr>
+            </tfoot>
+        </table>
+        <div class="button-container">
+            <button type="button" id="calculateInertiaBtn">Calculate Inertia</button>
+        </div>
+        <div class="result">
+            <p id="finalResult"></p>
+        </div>
+    </div>
+
+    <script src="scriptexp8.js"></script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Law of Moment</title>
+    <link rel="stylesheet" href="expcss.css">
+    <link rel="stylesheet" href="exp2.css" >
+    <style>
+      table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+      }
+      th, td {
+          padding: 10px;
+      }
+  </style>
+  </head>
+  <body>
+    <main>
+      <center><h1>Title : Law of Moment</h1></center>
+      <hr />
+      <p>
+        <strong><u>Aim</u></strong
+        >: The verification of principle of moments.
+      </p>
+      <p>
+        <strong><u>Apparatus</u></strong
+        >: Drawing sheet, pins, mirrors, weight pan, weights and pulleys.
+      </p>
+      <p>
+        <strong><u>Theory</u></strong
+        >: The moment of a force at a point is equal to the product of force and
+        the perpendicular distance of the point from the line of action of the
+        force. Principle of moment states that the moment of the force about a
+        point is equal to sum of the moments of its components about the same
+        point. Geometrically the moment of the force is equal to twice the area
+        of the triangle whose base is the line representing the force.
+      </p>
+      <br />
+
+      <center>
+        <img
+          src="https://search-static.byjusweb.com/question-images/byjus/infinitestudent-images/ckeditor_assets/pictures/205069/content_capture.jpg"
+          alt=""
+        />
+      </center>
+      <br />
+      <center>Moment = Force * perpendicular Distance</center>
+      <br />
+      <center>M = F * d</center>
+
+      <p>
+        <strong><u>Procedure</u></strong
+        >:
+      </p>
+      <div class="procedure">
+        <ul>
+          <li>
+            Two pulleys are mounted on a board, which is fixed on a wall. A
+            string is passed through both the pulleys. Another string is tied to
+            this string at the center of the pulleys. Weight pans are attached
+            to the two ends of the string.
+          </li>
+          <li>
+            Fix a drawing sheet on the board. Add weights in any two pans in
+            such a way that the sum of the weights in any two pans is greater
+            than the third. The system of forces will come to equilibrium on
+            some part of the drawing sheet.
+          </li>
+          <li>
+            Take a mirror and place it behind the strings. Mark the images of
+            the strings on the drawing sheet
+          </li>
+          <li>
+            Remove the drawing sheet and find the resultant of the two forces
+            graphically. Change the weights and repeat the procedure for a
+            different set of weights
+          </li>
+          <li>
+            After completing the parallelogram, consider any point O which is
+            the moment centre. Join all the corners of the parallelogram to this
+            point O, to form triangles
+          </li>
+          <li>
+            Find the areas of the triangles so as to verify the principle of
+            moments.
+          </li>
+        </ul>
+
+        <p>
+          <strong><u>Observation Table </u></strong>:
+        </p>
+        <table border="3px solid #fff" width="100%">
+          <thead>
+            <th>Sr. No.</th>
+            <th>P<sub>1</sub></th>
+            <th>d<sub>1</sub></th>
+            <th>P<sub>2</sub></th>
+            <th>d<sub>2</sub></sub></th>
+            <th>M<sub>1</sub>=P<sub>1</sub>d<sub>1</sub></th>
+            <th>M<sub>2</sub>=P<sub>2</sub>d<sub>2</sub></th>
+            <th>&sum;M</th>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>200</td>
+              <td>-10</td>
+              <td>100</td>
+              <td>20</td>
+              <td>-2000</td>
+              <td>2000</td>
+              <td>0</td>
+            </tr>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>200</td>
+                <td>-15</td>
+                <td>100</td>
+                <td>30</td>
+                <td>-3000</td>
+                <td>3000</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>50</td>
+                <td>-20</td>
+                <td>100</td>
+                <td>20</td>
+                <td>-1000</td>
+                <td>1000</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>200</td>
+                <td>-40</td>
+                <td>200</td>
+                <td>40</td>
+                <td>-8000</td>
+                <td>8000</td>
+                <td>0</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        <strong><u>Result</u></strong
+        >: Law of moment is verified.
+      </p>
+
+      <br />
+
+     <div class="container">
+      <div class="calculator">
+        <h1>Calculator</h1>
+        <form id="calculator-form">
+          <label for="p1">P<sub>1</sub>:</label>
+          <input type="number" id="p1" name="p1" required placeholder="0">
+          <label for="d1">d<sub>1</sub>:</label>
+          <input type="number" id="d1" name="d1" required placeholder="0">
+          <label for="p2">P<sub>2</sub>:</label>
+          <input type="number" id="p2" name="p2" required placeholder="0">
+          <label for="d2">d<sub>2</sub>:</label>
+          <input type="number" id="d2" name="d2" required placeholder="0">
+          <button type="submit">Calculate</button>
+        </form>
+        <div id="results">
+          <p>M<sub>1</sub>: <span id="m1"></span></p>
+          <p>M<sub>2</sub>: <span id="m2"></span></span></p>
+          <p>&sum;M: <span id="m"></span></p>
+        </div>
+      </div>
+     </div>
+      <script src="scriptexp2.js"></script>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,205 @@
+/* Global Styles */
+@import url("https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Saira Condensed";
+    font-size: 1rem;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #454545;
+    background-color: #f7f7f7;
+  }
+  
+  /* Header Styles */
+  
+  header {
+    background-color: #337ab7;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+  }
+  .logo{
+    pointer-events: none;
+    background: linear-gradient(180deg, #337ab7 95%, #f7f3f8 50%);
+    padding-bottom: 15px;
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px 0px 0px 0px;
+    display: flex;
+    gap: 10%;
+    justify-content: center;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  nav a:hover{
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  main{
+    margin-top: 20px;
+  }
+  .exps {
+    display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 65px;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  padding-left: 35vh;
+  padding-right: 30vh;
+  width: 100%;
+  justify-items: center;
+  margin-left: auto;
+  margin-right: auto;
+    /* Add responsive styles */
+    @media (max-width: 950px) {
+      grid-template-columns: repeat(1, 1fr);
+      padding-left: 20vh;
+      padding-right: 20vh;
+    }
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(1, 1fr);
+      padding-left: 10vh;
+      padding-right: 10vh;
+    }
+    @media (max-width: 480px) {
+      grid-template-columns: repeat(1, 1fr);
+      padding-left: 5vh;
+      padding-right: 5vh;
+    }
+  }
+  
+  .experiment {
+    background: linear-gradient(498deg, #fff 60%, #efefef 50%);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: left;
+    height: 110%;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    align-items: center;
+    position: relative;
+    max-width: 500px;
+  }
+  
+  .experiment p {
+    font-size: 1rem;
+  }
+  
+  .experiment h2 {
+    font-size: 1.5rem;
+  }
+  .experiment h2 .experiment1:hover{
+    font-size: 2rem;
+  }
+  
+  .experiment button {
+    background-color: #337ab7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 6%;
+    position: absolute;
+    bottom: 15px; /* Adjust as needed */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%);
+  }
+.experiment:hover{
+  width: 105%;
+  height: 115%;
+  transition: all .4s cubic-bezier(.5,.15,0,1);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+  
+}
+  .experiment1 {
+    background: linear-gradient(498deg, #fff 60%, #efefef 50%);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    /*! text-align: left; */
+    height: 120%;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 4%;
+    position: relative;
+    max-width: 500px;
+    align-items: center;
+  }
+  
+  .experiment1 p {
+    font-size: 1rem;
+  }
+  
+  .experiment1 h2 {
+    font-size: 1.5rem;
+  }
+  
+  .experiment1:hover{
+    width: 105%;
+    height: 125%;
+    transition: all .4s cubic-bezier(.5,.15,0,1);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);;
+  }
+  
+  /* Footer Styles */
+  footer {
+    pointer-events: none;
+    margin-top: 10vh;
+    background-color: #337ab7;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+}
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      gap: 0;
+      align-items: center;
+    }
+  
+    nav li {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+
+  .name{
+    text-align: center;
+    background-color: #337ab7;
+    color: white;
+    width: 100%;
+    height: 115%;
+    border-radius: 10px;
+    
+  }
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  .name:hover{
+    width: 105%;
+    height: 125%;
+    backdrop-filter: blur(15px);
+  }
