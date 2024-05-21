@@ -136,11 +136,8 @@
 
   /* Footer Styles */
   footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
     pointer-events: none;
-    margin-top: 10vh;
+    margin-top: 25vh;
     background-color: #337ab7;
     color: #fff;
     padding: 10px;
