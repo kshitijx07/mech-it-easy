@@ -161,6 +161,9 @@ form {
     border-color: #fff;
     background: #629acc;
   } 
+input {
+  padding: 0px 10px;
+}
   #explain{
     border: 1px solid #3a3a3a;
     border-radius: 10px;
