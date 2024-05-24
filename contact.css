@@ -161,18 +161,15 @@ form {
     border-color: #fff;
     background: #629acc;
   } 
-input {
-  padding: 0px 10px;
-}
-  #explain{
+  #message{
     border: 1px solid #3a3a3a;
     border-radius: 10px;
     outline: 1px;
     width: 100%;
     margin: 5px auto;
   }
-  .explain:focus~label,
-  .explain:valid~label {
+  .message:focus~label,
+  .message:valid~label {
     font-size: 1.1rem;
     font-weight: 500;
     top: 8px;
@@ -194,4 +191,9 @@ input {
   .hyper:active { 
     text-decoration: none; 
   }
-  
+input{
+  padding-left: 2%;
+}
+textarea{
+  padding-left: 2%;
+}
